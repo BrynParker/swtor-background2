@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Outer Space Background</title>
-<link rel="stylesheet" href="https://brynparker.github.io/swtor-background2/style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: black;
+    }
+
+    video.background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 2;
+    }
 
 
+  </style>
 </head>
 <body>
-<!-- partial:index.partial.html -->
+
   <div class="galaxy"></div>
+
   <video class="background-video" autoplay loop muted playsinline>
-  <source src="https://brynparker.github.io/swtor-background2/images/sci_background3.mp4" type="video/mp4">
+    <source src="https://brynparker.github.io/swtor-background2/images/sci_background3.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-
-
-
-<!-- partial -->
-<script src="https://brynparker.github.io/swtor-background2/script.js"></script>
 
 </body>
 </html>
