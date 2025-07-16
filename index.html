@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Outer Space Background (GIF)</title>
+  <title>Outer Space Background</title>
   <style>
     html, body {
       margin: 0;
@@ -12,24 +12,27 @@
       background: black;
     }
 
-    .background-gif {
+    video.background-video {
       position: absolute;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
       object-fit: cover;
-      z-index: 3;
+      z-index: 2;
     }
+
+
   </style>
 </head>
 <body>
 
-  <img
-    class="background-gif"
-    src="https://i.imgur.com/flXOKUX.gif"
-    alt="Animated Galaxy Background"
-  />
+  <div class="galaxy"></div>
+
+  <video class="background-video" autoplay loop muted playsinline>
+    <source src="https://brynparker.github.io/swtor-background2/images/sci_background4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
 </body>
 </html>
